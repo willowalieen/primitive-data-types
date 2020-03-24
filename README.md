@@ -1,9 +1,6 @@
-This folder is to demonstrate that I have completed a survey of the primitive data types using their basic functions
+This repository demonstrates that I have completed a survey of the primitive data types and have understood and used their basic functions.
 
-We also learn that often in built functions are vast enough to help perform most of the operations we ever will do
-
-We also learn a fundamental concept in programming, which is that all languages have similar capabilities when it comes to what you can do with information
-
-Also started to learn the differences and similarities between python and javascript as interpreted and compiled languages
-
-Also learn what is better with python vs javascript, but this will become more clear as we do further advanced things
+I have also learned that:
+- The built-in data type functions are vast enough to help perform most of the operations we ever will need to do
+- All languages have similar capabilities when it comes to what you can do with information
+- Certain actions are easier with Python over JavaScript, and vice versa, but both languages are still capable of solving the same kinds of problems
