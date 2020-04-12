@@ -14,11 +14,28 @@ newString = None
 
 ########################################################################
 #
-#  EXERCISE 2 - STRING LENGTH
+#  EXERCISE 2 - TYPE OF
+#
+#  Get the data type of the 'getMyDataType' variable and save it into
+#  the variable 'gotDataType'
+getMyDataType = "This is a string"
+#
+###################### YOUR CODE BELOW THIS LINE #######################
+
+gotDataType = None
+
+########################################################################
+
+
+
+########################################################################
+#
+#  EXERCISE 3 - STRING LENGTH
 #
 #  Determine the length of the following variable 'getMyLenght', and save
 #  into the variable 'myLength'
 getMyLenght = "Get the length of this string"
+#  NOTE: This uses one of the only properties that exists for strings
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
@@ -30,7 +47,7 @@ myLength = None
 
 ########################################################################
 #
-#  EXERCISE 3 - STRING CONCATENATION
+#  EXERCISE 4 - STRING CONCATENATION
 #
 #  Concatenate variables 'concat1', 'concat2', and 'concat3' together
 #  and save the result into 'concatStrings'
@@ -49,7 +66,7 @@ concatStrings = None
 
 ########################################################################
 #
-#  EXERCISE 4 - STRING REPETITION
+#  EXERCISE 5 - STRING REPETITION
 #
 #  I've generated a random integer between 1 and 5 and saved it into 'repeatTimes'
 from random import randrange
@@ -69,7 +86,7 @@ repeatedString = None
 
 ########################################################################
 #
-#  EXERCISE 5 - STRING CONTAINS
+#  EXERCISE 6 - STRING CONTAINS
 #
 #  Check if variable 'mainString' contains the 'subString' string
 #  and save the result into 'stringContains'
@@ -87,7 +104,7 @@ stringContains = None
 
 ########################################################################
 #
-#  EXERCISE 6 - STRING FIND
+#  EXERCISE 7 - STRING FIND
 #
 #  Find the index in 'findSubstring' where string 'subStringToFind' occurs
 #  and save the result into 'foundSubstringIndex'
@@ -105,7 +122,7 @@ foundSubstringIndex = None
 
 ########################################################################
 #
-#  EXERCISE 7 - STRING FIRST CHARACTER
+#  EXERCISE 8 - STRING FIRST CHARACTER
 #
 #  Get the first character of 'getFirstCharacter' and save the result
 #  into 'firstCharacter'
@@ -121,7 +138,7 @@ firstCharacter = None
 
 ########################################################################
 #
-#  EXERCISE 8 - STRING FIRST SEVEN CHARACTERS
+#  EXERCISE 9 - STRING FIRST SEVEN CHARACTERS
 #
 #  Get the first seven character of 'getFirstSevenCharacters' and save the result
 #  into 'firstSevenCharacters'
@@ -137,7 +154,7 @@ firstSevenCharacters = None
 
 ########################################################################
 #
-#  EXERCISE 9 - STRING LAST CHARACTER
+#  EXERCISE 10 - STRING LAST CHARACTER
 #
 #  Get the last character of 'getLastCharacter' and save the result
 #  into 'lastCharacter'
@@ -153,7 +170,7 @@ lastCharacter = None
 
 ########################################################################
 #
-#  EXERCISE 10 - STRING LAST 4 CHARACTERS
+#  EXERCISE 11 - STRING LAST 4 CHARACTERS
 #
 #  Get the last four characters of 'getLastFourCharacters' and save the result
 #  into 'lastFourCharacters'
@@ -169,7 +186,7 @@ lastFourCharacters = None
 
 ########################################################################
 #
-#  EXERCISE 11 - STRING EQUALS
+#  EXERCISE 12 - STRING EQUALS
 #
 #  Determine if strings 'checkEquality1' and 'checkEquality2' are equal
 #  and save the result into 'stringsAreEqual'
@@ -187,7 +204,7 @@ stringsAreEqual = None
 
 ########################################################################
 #
-#  EXERCISE 12 - STRING EQUALS IGNORE CASE
+#  EXERCISE 13 - STRING EQUALS IGNORE CASE
 #
 #  Determine if strings 'checkEqualityIgnoreCase1' and 'checkEqualityIgnoreCase2'
 #  are equal, ignoring case, and save the result into 'stringsAreEqualIgnoreCase'
@@ -205,7 +222,7 @@ stringsAreEqualIgnoreCase = None
 
 ########################################################################
 #
-#  EXERCISE 13 - STRING REPLACE
+#  EXERCISE 14 - STRING REPLACE
 #
 #  Replace all occurences of "John" with "Michael" in 'replaceMe' and save
 #  the result into 'replacedString'
@@ -221,7 +238,7 @@ replacedString = None
 
 ########################################################################
 #
-#  EXERCISE 14 - STRING REMOVE
+#  EXERCISE 15 - STRING REMOVE
 #
 #  Remove 'going to' from the string 'removeMe' so that is makes sense
 #  and save the result into removedString
@@ -238,7 +255,7 @@ removedString = None
 
 ########################################################################
 #
-#  EXERCISE 15 - MULTIPLE MANIPULATIONS 1
+#  EXERCISE 16 - MULTIPLE MANIPULATIONS 1
 #
 #  Turn 'testString1':
 testString1 = "The quick brown fox jumps over the lazy dog"
@@ -259,7 +276,7 @@ targetString1 = "THE-QUICK-BROWN-FOX-JUMPS-OVER-THE-LAZY-BLUE-DOG"
 
 ########################################################################
 #
-#  EXERCISE 16 - MULTIPLE MANIPULATIONS 2
+#  EXERCISE 17 - MULTIPLE MANIPULATIONS 2
 #
 #  Turn 'testString2':
 testString2 = "I am the first sentence. You are the second sentence"
@@ -321,6 +338,17 @@ elif type(newString) is str and len(newString) > 1:
   passedTests+= 1
 else:
   print(incorrectMsg + "The initialized 'newString' should be a non-empty string, yours is '" + newString + "'")
+totalTests += 1
+
+# String TypeOf
+correctGotDataType = type(getMyDataType)
+if gotDataType == None:
+  print(incorrectMsg + "The initialized 'gotDataType' should be defined")
+elif gotDataType == correctGotDataType:
+  print(correctMsg + "The value of the 'gotDataType' variable you got was: '" + str(gotDataType) + "'")
+  passedTests+= 1
+else:
+  print(incorrectMsg + "The value of the 'gotDataType' variable should be '" + str(correctGotDataType) + "', yours is '" + str(gotDataType) + "'")
 totalTests += 1
 
 # String Length

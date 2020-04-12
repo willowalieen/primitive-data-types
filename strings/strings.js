@@ -14,7 +14,23 @@ let newString
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 2 - STRING LENGTH
+//  EXERCISE 2 - TYPE OF
+//
+//  Get the data type of the 'getMyDataType' variable and save it into
+//  the variable 'gotDataType'
+let getMyDataType = "This is a string"
+//
+////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
+
+let gotDataType
+
+////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////
+//
+//  EXERCISE 3 - STRING LENGTH
 //
 //  Determine the length of the following variable 'getMyLenght', and save
 //  into the variable 'myLength'
@@ -30,7 +46,7 @@ let myLength
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 3 - STRING CONCATENATION
+//  EXERCISE 4 - STRING CONCATENATION
 //
 //  Concatenate variables 'concat1', 'concat2', and 'concat3' together
 //  and save the result into 'concatStrings'
@@ -49,7 +65,7 @@ let concatStrings
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 4 - STRING CONTAINS
+//  EXERCISE 5 - STRING CONTAINS
 //
 //  Check if variable 'mainString' contains the 'subString' string
 //  and save the result into 'stringContains'
@@ -67,7 +83,7 @@ let stringContains
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 5 - STRING CONTAINS IGNORE CASE
+//  EXERCISE 6 - STRING CONTAINS IGNORE CASE
 //
 //  Check if variable 'mainStringIgnoreCase' contains the 'subStringIgnoreCase'
 //  string ignoring case, and save the result into 'stringContainsIgnoreCase'
@@ -85,7 +101,7 @@ let stringContainsIgnoreCase
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 6 - STRING FIRST CHARACTER
+//  EXERCISE 7 - STRING FIRST CHARACTER
 //
 //  Get the first character of 'getFirstCharacter' and save the result
 //  into 'firstCharacter'
@@ -101,7 +117,7 @@ let firstCharacter
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 7 - STRING FIRST FOUR CHARACTERS
+//  EXERCISE 8 - STRING FIRST FOUR CHARACTERS
 //
 //  Get the first four character of 'getFirstFourCharacters' and save the result
 //  into 'firstFourCharacters'
@@ -117,7 +133,7 @@ let firstFourCharacters
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 8 - STRING LAST CHARACTER
+//  EXERCISE 9 - STRING LAST CHARACTER
 //
 //  Get the last character of 'getLastCharacter' and save the result
 //  into 'lastCharacter'
@@ -133,7 +149,7 @@ let lastCharacter
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 9 - STRING LAST SIX CHARACTERS
+//  EXERCISE 10 - STRING LAST SIX CHARACTERS
 //
 //  Get the last six character of 'getLastSixCharacters' and save the result
 //  into 'lastSixCharacters'
@@ -149,7 +165,7 @@ let lastSixCharacters
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 10 - STRING EQUALS
+//  EXERCISE 11 - STRING EQUALS
 //
 //  Determine if strings 'checkEquality1' and 'checkEquality2' are equal
 //  and save the result into 'stringsAreEqual'
@@ -167,7 +183,7 @@ let stringsAreEqual
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 11 - STRING EQUALS IGNORE CASE
+//  EXERCISE 12 - STRING EQUALS IGNORE CASE
 //
 //  Determine if strings 'checkEqualityIgnoreCase1' and 'checkEqualityIgnoreCase2'
 //  are equal, ignoring case, and save the result into 'stringsAreEqualIgnoreCase'
@@ -185,7 +201,7 @@ let stringsAreEqualIgnoreCase
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 12 - STRING REPLACE
+//  EXERCISE 13 - STRING REPLACE
 //
 //  Replace all occurences of "John" with "Michael" in 'replaceMe' and save
 //  the result into 'replacedString'
@@ -201,7 +217,7 @@ let replacedString
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 13 - STRING REMOVE
+//  EXERCISE 14 - STRING REMOVE
 //
 //  Remove 'going to' from the string 'removeMe' so that is makes sense
 //  and save the result into removedString
@@ -218,7 +234,7 @@ let removedString
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 14 - MULTIPLE MANIPULATIONS 1
+//  EXERCISE 15 - MULTIPLE MANIPULATIONS 1
 //
 //  Turn 'testString1':
 let testString1 = "The quick brown fox jumps over the lazy dog"
@@ -237,7 +253,7 @@ let targetString1 = "THE-QUICK-BROWN-FOX-JUMPS-OVER-THE-LAZY-DOG"
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 15 - MULTIPLE MANIPULATIONS 2
+//  EXERCISE 16 - MULTIPLE MANIPULATIONS 2
 //
 //  Turn 'testString2':
 let testString2 = "I am the first sentence. You are the second sentence"
@@ -257,7 +273,7 @@ let targetString2 = "i am the second best, you are the first best!"
 
 ////////////////////////////////////////////////////////////////////////
 //
-//  EXERCISE 16 - STRING ESCAPED CHARACTER
+//  EXERCISE 17 - STRING ESCAPED CHARACTER
 //
 //  Since strings start and end in quotes, you can't just add a quote
 //  midstring as this would signify the end of the string. However, in
@@ -269,7 +285,7 @@ let escapedString
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-// escapedString = "My professor said \"Study hard and you will succeed\""
+// escapedString = "My professor said: \"Study hard and you will succeed\" \nI replied: \"Thanks for the tip!\""
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -316,6 +332,16 @@ if (newString !== undefined && newString.length > 0) {
   passedTests++
 } else {
   console.log(incorrectMsg + "The initialized 'newString' should be defined and have a length of more than 0, but yours is '" + newString + "'")
+}
+totalTests++
+
+// String Type Of
+let correctGotDataType = typeof getMyDataType
+if (gotDataType !== undefined && gotDataType === correctGotDataType) {
+  console.log(correctMsg + "The data type saved into 'gotDataType' you got was '" + gotDataType + "'")
+  passedTests++
+} else {
+  console.log(incorrectMsg + "The value of the 'gotDataType' variable should be '" + correctGotDataType + "' but you got '" + gotDataType + "'")
 }
 totalTests++
 

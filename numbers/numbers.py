@@ -1,7 +1,6 @@
 # Some imports are necessary
 import math
 import time
-import pandas
 
 ########################################################################
 #
