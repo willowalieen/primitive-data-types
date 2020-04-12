@@ -416,7 +416,7 @@ if (lastCharacter !== undefined && lastCharacter === correctLastCharacter) {
 totalTests++
 
 // String Last Six Characters
-let correctLastSixCharacters = getLastSixCharacters.substring(getLastSixCharacters.length - 7, getLastSixCharacters.length - 1)
+let correctLastSixCharacters = getLastSixCharacters.substring(getLastSixCharacters.length - 6)
 if (lastSixCharacters !== undefined && lastSixCharacters === correctLastSixCharacters) {
   console.log(correctMsg + "The last six characters of 'getLastSixCharacters' you got was: '" + lastSixCharacters + "'")
   passedTests++
