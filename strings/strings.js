@@ -486,9 +486,9 @@ if (testString2 === targetString2) {
 totalTests++
 
 // Escaped String
-let correctEscapedString = "My professor said \"Study hard and you will succeed\""
+let correctEscapedString = "My professor said: \"Study hard and you will succeed\" \nI replied: \"Thanks for the tip!\""
 if (escapedString !== undefined && escapedString === correctEscapedString) {
-  console.log(correctMsg + "The 'escapedString' with escaped quotes looks like: '" + escapedString + "'")
+  console.log(correctMsg + "The 'escapedString' with escaped quotes looks like: \n'" + escapedString + "'")
   passedTests++
 } else {
   console.log(incorrectMsg + "The 'escapedString' with escaped quotes should be '" + correctEscapedString + "' but you got '" + escapedString + "'")
