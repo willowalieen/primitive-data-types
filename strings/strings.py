@@ -466,10 +466,10 @@ correctStringEqualsIgnoreCase = checkEqualityIgnoreCase1.upper() == checkEqualit
 if stringsAreEqualIgnoreCase == None:
   print(incorrectMsg + "The 'stringsAreEqualIgnoreCase' variable should be defined")
 elif stringsAreEqualIgnoreCase == correctStringEqualsIgnoreCase:
-  print(correctMsg + "As for strings 'checkEqualityIgnoreCase1' and 'checkEqualityIgnoreCase2' being equal ignoring case, you said this was: " + stringsAreEqualIgnoreCase)
+  print(correctMsg + "As for strings 'checkEqualityIgnoreCase1' and 'checkEqualityIgnoreCase2' being equal ignoring case, you said this was: " + str(stringsAreEqualIgnoreCase))
   passedTests+= 1
 else:
-  print(incorrectMsg + "As for strings 'checkEqualityIgnoreCase1' and 'checkEqualityIgnoreCase2' being equal ignoring case, this should be " + correctStringEqualsIgnoreCase + " but you got " + stringsAreEqualIgnoreCase)
+  print(incorrectMsg + "As for strings 'checkEqualityIgnoreCase1' and 'checkEqualityIgnoreCase2' being equal ignoring case, this should be " + str(correctStringEqualsIgnoreCase) + " but you got " + str(stringsAreEqualIgnoreCase))
 totalTests += 1
 
 # String Replace
