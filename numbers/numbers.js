@@ -114,6 +114,39 @@ let scorePercentage
 
 
 
+////////////////////////////////////////////////////////////////////////
+//
+//  EXERCISE 8 - Add number to string
+//
+//  Add the number in variable 'score' to the end of the string variable
+//  'messagePrefix' and save it into the variable 'scoreMessage'
+let messagePrefix = "You got a score of"
+let score = 145
+//
+////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
+
+let scoreMessage
+
+////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////
+//
+//  EXERCISE 9 - Parse float from string
+//
+//  Parse the number from string variable 'parseTheNumber' and save it into
+//  'parsedNumber' which should be of number data type
+let parseTheNumber = "You got a score of 25.5"
+//
+////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
+
+let parsedNumber
+
+////////////////////////////////////////////////////////////////////////
+
+
+
 /////////////////////// END OF NUMBERS EXERCISES ///////////////////////
 
 
@@ -224,7 +257,27 @@ if (scorePercentage !== undefined && scorePercentage === correctScorePercentage)
   console.log(correctMsg + "The percentage of 'scoreValue' out of 'maxValue' to 2 decimal places you got was " + scorePercentage)
   passedTests++
 } else {
-  console.log(incorrectMsg + "The percentage of 'scoreValue' out of 'maxValue' to 2 decimal placesshould be " + correctScorePercentage + " but you got " + scorePercentage)
+  console.log(incorrectMsg + "The percentage of 'scoreValue' out of 'maxValue' to 2 decimal places should be " + correctScorePercentage + " but you got " + scorePercentage)
+}
+totalTests++
+
+// Add number to string
+let correctScoreMessage = messagePrefix + " " + score
+if (scoreMessage !== undefined && scoreMessage === correctScoreMessage) {
+  console.log(correctMsg + "The vale of 'scoreMessage' you got was " + scoreMessage)
+  passedTests++
+} else {
+  console.log(incorrectMsg + "The vale of 'scoreMessage' should be '" + correctScoreMessage + "' but you got " + scoreMessage)
+}
+totalTests++
+
+// Parse number from string
+let correctParsedNumber = parseFloat(parseTheNumber.replace(/[^0-9.]/g, ""))
+if (parsedNumber !== undefined && parsedNumber === correctParsedNumber) {
+  console.log(correctMsg + "The vale of 'parsedNumber' you got was " + parsedNumber + " of type " + typeof(parsedNumber))
+  passedTests++
+} else {
+  console.log(incorrectMsg + "The vale of 'parsedNumber' should be " + correctParsedNumber + " of type " + typeof(correctParsedNumber) + " but you got " + parsedNumber + " of type " + typeof(parsedNumber))
 }
 totalTests++
 
