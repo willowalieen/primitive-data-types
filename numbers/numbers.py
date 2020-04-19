@@ -1,6 +1,3 @@
-# Some imports are necessary
-import time
-
 ########################################################################
 #
 #  EXERCISE 1 - INTEGER INITALIZATION
