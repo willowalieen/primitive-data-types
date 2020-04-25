@@ -491,7 +491,7 @@ if (escapedString !== undefined && escapedString === correctEscapedString) {
   console.log(correctMsg + "The 'escapedString' with escaped quotes looks like: \n'" + escapedString + "'")
   passedTests++
 } else {
-  console.log(incorrectMsg + "The 'escapedString' with escaped quotes should be '" + correctEscapedString + "' but you got '" + escapedString + "'")
+  console.log(incorrectMsg + "The 'escapedString' with escaped quotes should be:\n'" + correctEscapedString + "'\n but you got '" + escapedString + "'")
 }
 totalTests++
 

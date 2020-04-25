@@ -11,7 +11,18 @@ python strings/strings.py
 echo
 echo
 
-echo "2. NUMBERS EXERCISES:"
+echo "2. BOOLEANS EXERCISES:"
+echo
+echo "Javascript Booleans"
+node booleans/booleans.js
+echo
+echo "Python Booleans"
+python booleans/booleans.py
+
+echo
+echo
+
+echo "3. NUMBERS EXERCISES:"
 echo
 echo "Javascript Numbers"
 node numbers/numbers.js

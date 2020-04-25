@@ -2,7 +2,7 @@
 //
 //  EXERCISE 1 - INITALIZATION
 //
-//  Initialize the 'newBoolean' variable as boolean literal of value True
+//  Initialize the 'newBoolean' variable as a boolean literal of value true
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
@@ -254,7 +254,6 @@ function generateSudentEssay() {
     }
     return "The fact the retro artwork made him smile showed his deep longing for the past, especially for the time when technology began to pervade society and the outlook was still positive."
 }
-
 
 // generateSecretCode returns a secret code that sometimes passes validation, sometimes
 // doesn't, so that you cannot cheat and write boolean literals based on the exercise setup

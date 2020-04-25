@@ -260,7 +260,7 @@ removedString = None
 #  Turn 'testString1':
 testString1 = "The quick brown fox jumps over the lazy dog"
 #  into 'targetString1':
-targetString1 = "THE-QUICK-BROWN-FOX-JUMPS-OVER-THE-LAZY-BLUE-DOG"
+targetString1 = "THE-QUICK-BROWN-FOX-JUMPS-OVER-THE-LAZY-DOG"
 #  NOTE: Unlike javascript, python strings are immutable, changing a
 #  string requires you to save the changed string into a new variable
 #  simply do testString1 = testString1[:] etc to update the testString1
