@@ -14,7 +14,7 @@ newBoolean = None
 
 ########################################################################
 #
-#  EXERCISE 2 - DO I PASS THIS COURSSE
+#  EXERCISE 2 - DO I PASS THIS COURSE
 #
 #  To graduate, the student needs at least one of their exams to be above 75%
 #  pass mark. Check to see if the student passes at least one of their exams and
@@ -147,12 +147,12 @@ if studentPasses == None:
 	print(incorrectMsg + "The initialized 'studentPasses' variable should be defined")
 elif type(studentPasses) is bool and studentPasses == correctStudentPasses:
 	print(correctMsg + "Passed exam score tests")
-	print("\tThe students two scores on the test were " + str(examScore1) + " and " + examScore2 + ", the score to pass was " + scoreToPass + ".")
+	print("\tThe students two scores on the test were " + str(examScore1) + " and " + str(examScore2) + ", the score to pass was " + str(scoreToPass) + ".")
 	print("\tThe value of 'studentPasses' you got was: '" + str(studentPasses) + "'")
 	passedTests+= 1
 else:
 	print(incorrectMsg + "Failed exam score tests")
-	print("\tThe students two scores on the test were " + str(examScore1) + " and " + examScore2 + ", the score to pass was " + scoreToPass + ".")
+	print("\tThe students two scores on the test were " + str(examScore1) + " and " + str(examScore2) + ", the score to pass was " + str(scoreToPass) + ".")
 	print("\tThe value of 'studentPasses' should be '" + str(correctStudentPasses) + "', yours is '" + str(studentPasses) + "'")
 totalTests += 1
 
