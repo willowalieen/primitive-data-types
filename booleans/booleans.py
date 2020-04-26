@@ -17,8 +17,8 @@ newBoolean = None
 #  EXERCISE 2 - DO I PASS THIS COURSE
 #
 #  To graduate, the student needs at least one of their exams to be above 75%
-#  pass mark. Check to see if the student passes at least one of their exams and
-#  ('examScore1' and 'examScore2') and save the result into 'scoreToPass'
+#  pass mark. Check to see if the student passes at least one of their exams
+#  ('examScore1' and 'examScore2') and save the result into 'studentPasses'
 #
 import random
 examScore1 = random.randint(0, 100)
