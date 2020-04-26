@@ -236,7 +236,7 @@ let correctCodeIsValid = (secretCode.charCodeAt(4) >= 65 && secretCode.charCodeA
                          (secretCode.charCodeAt(9) >= 48 && secretCode.charCodeAt(9) <= 57) &&
                          secretCode.length === 15
 if (codeIsValid !== undefined && codeIsValid === correctCodeIsValid) {
-    console.log(correctMsg + "The code was '" + secretCode + "' so value of 'codeIsValid' you got was '" + notPlagiarised + "'")
+    console.log(correctMsg + "The code was '" + secretCode + "' so value of 'codeIsValid' you got was '" + codeIsValid + "'")
     passedTests++
 } else {
     console.log(incorrectMsg + "The code was '" + secretCode + "' so the value of 'codeIsValid' should be '" + correctCodeIsValid + "' but you got '" + codeIsValid + "'")
