@@ -18,8 +18,8 @@ let newNumber
 //
 //  Check if variables 'isNumer1' and 'isNumber2' are numbers and save
 //  the result into 'number1IsNumber' and 'number2IsNumber' respectively
-    let isNumber1 = "Nan"
-    let isNumber2 = 4000
+let isNumber1 = "Nan"
+let isNumber2 = 4000
 //  NOTE: 'number1IsNumber' and 'number2IsNumber' should be boolean values
 //  of True or False. The code will indeed be the same for both variables
 //
@@ -38,7 +38,7 @@ let number2IsNumber
 //
 //  Get the absolute value of 'getMyAbsoluteValue' and save the result
 //  into 'absoluteValue'
-    let getMyAbsoluteValue = -99
+let getMyAbsoluteValue = -99
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
@@ -54,7 +54,7 @@ let absoluteValue
 //
 //  Round up the variable 'roundMeUp' to the nearest integer and save the
 //  the result into 'roundedUpNumber'
-    let roundMeUp = 85.4
+let roundMeUp = 85.4
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
@@ -70,7 +70,7 @@ let roundedUpNumber
 //
 //  Round down the variable 'roundMeDown' to the nearest integer and save the
 //  the result into 'roundedDownNumber'
-    let roundMeDown = 85.4
+let roundMeDown = 85.4
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
@@ -86,8 +86,8 @@ let roundedDownNumber
 //
 //  Calculate 'baseNumber' to the power of 'powerNumber' and save the
 //  result into 'baseToThePower'
-    let baseNumber = 2
-    let powerNumber = 9
+let baseNumber = 2
+let powerNumber = 9
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
