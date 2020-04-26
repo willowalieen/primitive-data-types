@@ -142,7 +142,7 @@ totalTests += 1
 
 
 # Do I pass The Course
-correctStudentPasses = examScore1 > scoreToPass or examScore2 > scoreToPass
+correctStudentPasses = examScore1 >= scoreToPass or examScore2 >= scoreToPass
 if studentPasses == None:
 	print(incorrectMsg + "The initialized 'studentPasses' variable should be defined")
 elif type(studentPasses) is bool and studentPasses == correctStudentPasses:
