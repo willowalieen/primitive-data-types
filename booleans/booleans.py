@@ -67,6 +67,33 @@ bothAtLeastOneCorrect = None
 
 
 
+########################################################################
+#
+#  EXERCISE 4 - TRUTHY AND FALSY
+#
+#  As well as a type, each value also has an inherent boolean value,
+#  generally known as either truthy or falsy. Some of the rules are a
+#  little bizarre so have a look at the following conversions using
+#  the bool() conversion function, which will look at the non-boolean
+#  data types and return their inherent boolean value
+#
+falsy1 = falsy2 = falsy3 = None
+truthy1 = truthy2 = None
+# Uncomment the lines below to see what they evaluate to
+#
+###################### YOUR CODE BELOW THIS LINE #######################
+
+# falsy1 = bool("")
+# falsy2 = bool(0)
+# falsy3 = bool(None)
+
+# truthy1 = bool("non-empty string")
+# truthy2 = bool(1)
+
+########################################################################
+
+
+
 ###################### END OF BOOLEANS EXERCISES #######################
 
 
@@ -78,7 +105,7 @@ bothAtLeastOneCorrect = None
 #  DO NOT LOOK AT THIS SECTION UNTIL YOU HAVE FINISHED THE EXERCISES
 #
 #  The following code tests the variables you need to work on to confirm your work is
-#  correct. The if conditions check the variables are correct and the console.log()
+#  correct. The if conditions check the variables are correct and the print()
 #  statements are what make the print outs you see when you run the file. The below
 #  is a crude demonstration of what we refer to as code tests. Code testing is a
 #  common practice in the software engineer's role, where tests are run to confirm all
@@ -145,6 +172,31 @@ else:
 	print("\tStudent 1 guessed " + str(student1Wood) + " woods and " + str(student1Chuck) + " chucks!")
 	print("\tStudent 2 guessed " + str(student2Wood) + " woods and " + str(student2Chuck) + " chucks!")
 	print("\tThe value of 'bothAtLeastOneCorrect' should thus be '" + str(correctBothAtLeast) +  "' but you got '" + str(bothAtLeastOneCorrect) + "'")
+totalTests += 1
+
+
+# Truty and Falsy Values
+if falsy1 == None or falsy2 == None or falsy3 == None or truthy1 == None or truthy2 == None:
+	print(incorrectMsg + "The initialized 'falsy1', 'falsy2', 'falsy3', 'falsy4', 'truthy1', and 'truthy2' variables should be defined")
+elif not falsy1 and not falsy2 and not falsy3 and truthy1 and truthy2:
+	print(correctMsg + "Passed falsy and truthy values:")
+	print("\tFalsy values:")
+	print('\tThe expression [ bool("") ]          evaluates to ' + str(falsy1))
+	print('\tThe expression [ bool(0) ]           evaluates to ' + str(falsy2))
+	print('\tThe expression [ bool(None) ]        evaluates to ' + str(falsy3))
+	print("\tTruthy values:")
+	print('\tThe expression [ bool("non-empty") ] evaluates to ' + str(truthy1))
+	print('\tThe expression [ bool(1) ]           evaluates to ' + str(truthy2))
+	passedTests+= 1
+else:
+	print(incorrectMsg + "Failed falsy and truthy values:")
+	print("\tFalsy values:")
+	print("\tThe expression [ bool(\"\") ] should be saved into 'falsy1'")
+	print("\tThe expression [ bool(0) ] should be saved into 'falsy2'")
+	print("\tThe expression [ bool(None) ] should be saved into 'falsy3'")
+	print("\tTruthy values:")
+	print("\tThe expression [ bool(\"non-empty\") ] should be saved into 'truthy1'")
+	print("\tThe expression [ bool(1) ] should be saved into 'truthy2'")
 totalTests += 1
 
 

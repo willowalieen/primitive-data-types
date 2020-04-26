@@ -100,6 +100,33 @@ let codeIsValid
 
 
 
+////////////////////////////////////////////////////////////////////////
+//
+//  EXERCISE 6 - TRUTHY AND FALSY
+//
+//  As well as a type, each value also has an inherent boolean value,
+//  generally known as either truthy or falsy. Some of the rules are a
+//  little bizarre so have a look at the following conversions using
+//  the Boolean() conversion function, which will look at the non-boolean
+//  data types and return their inherent boolean value
+let falsy1, falsy2, falsy3, falsy4, falsy5
+let truthy1, truthy2
+//  Uncomment the lines below to see what they evaluate to
+//
+////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
+
+// falsy1 = Boolean("")
+// falsy2 = Boolean(0)
+// falsy3 = Boolean(undefined)
+// falsy4 = Boolean(null)
+
+// truthy1 = Boolean("non-empty string")
+// truthy2 = Boolean(1)
+
+////////////////////////////////////////////////////////////////////////
+
+
+
 /////////////////////// END OF BOOLEANS EXERCISES //////////////////////
 
 
@@ -209,6 +236,36 @@ if (codeIsValid !== undefined && codeIsValid === correctCodeIsValid) {
     passedTests++
 } else {
     console.log(incorrectMsg + "The code was '" + secretCode + "' so the value of 'codeIsValid' should be '" + correctCodeIsValid + "' but you got '" + codeIsValid + "'")
+}
+totalTests++
+
+// Truthy vs Falsy
+if (falsy1 !== undefined && !falsy1 &&
+    falsy2 !== undefined && !falsy2 &&
+    falsy3 !== undefined && !falsy3 &&
+    falsy4 !== undefined && !falsy4 &&
+    truthy1 !== undefined && truthy1 &&
+    truthy2 !== undefined && truthy2) {
+    console.log(correctMsg + "Passed falsy and truthy values:")
+    console.log("\tFalsy values:")
+    console.log('\tThe expression [ Boolean("") ]          evaluates to ' + falsy1)
+    console.log('\tThe expression [ Boolean(0) ]           evaluates to ' + falsy2)
+    console.log('\tThe expression [ Boolean(undefined) ]   evaluates to ' + falsy3)
+    console.log('\tThe expression [ Boolean(null) ]        evaluates to ' + falsy4)
+    console.log("\tTruthy values:")
+    console.log('\tThe expression [ Boolean("non-empty") ] evaluates to ' + truthy1)
+    console.log('\tThe expression [ Boolean(1) ]           evaluates to ' + truthy2)
+    passedTests++
+} else {
+    console.log(incorrectMsg + "Failed falsy and truthy values:")
+    console.log("\tFalsy values:")
+    console.log("\tThe expression [ Boolean(\"\") ] should be saved into 'falsy1'")
+    console.log("\tThe expression [ Boolean(0) ] should be saved into 'falsy2'")
+    console.log("\tThe expression [ Boolean(undefined) ] should be saved into 'falsy3'")
+    console.log("\tThe expression [ Boolean(null) ] should be saved into 'falsy4'")
+    console.log("\tTruthy values:")
+    console.log("\tThe expression [ Boolean(\"non-empty\") ] should be saved into 'truthy1'")
+    console.log("\tThe expression [ Boolean(1) ] should be saved into 'truthy2'")
 }
 totalTests++
 
