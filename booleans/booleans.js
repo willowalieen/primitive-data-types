@@ -180,12 +180,14 @@ if (momIsTaller !== undefined && momIsTaller === correctMomIsTaller &&
     dadIsTaller !== undefined && dadIsTaller === correctDadIsTaller &&
     areTheSameHeight !== undefined && areTheSameHeight === correctSameHeight) {
     console.log(correctMsg + "Passed Mom vs data height:")
+    console.log("\tMom's height was " + momsHeight + "cm and dad's height was " + dadsHeight + "cm")
     console.log("\tValue of 'momIsTaller' you got was '" + momIsTaller + "'")
     console.log("\tValue of 'dadIsTaller' you got was '" + dadIsTaller + "'")
     console.log("\tValue of 'areTheSameHeight' you got was'" + areTheSameHeight + "'")
     passedTests++
 } else {
     console.log(incorrectMsg + "Failed Mom vs data height:")
+    console.log("\tMom's height was " + momsHeight + "cm and dad's height was " + dadsHeight + "cm")
     console.log("\t'momIsTaller' should be '" + correctMomIsTaller + "' and you got '" + momIsTaller + "'")
     console.log("\t'dadIsTaller' should be '" + correctDadIsTaller + "' and you got '" + dadIsTaller + "'")
     console.log("\t'areTheSameHeight' should be '" + correctSameHeight + "' and you got '" + areTheSameHeight + "'")
@@ -213,6 +215,7 @@ if (siblingsAreTall !== undefined && siblingsAreTall === correctAllAreTall &&
     atLeastOneIsTall !== undefined && atLeastOneIsTall === correctAtLeastOneIsTall &&
     onlyOneIsTall !== undefined && onlyOneIsTall === correctOnlyOneIsTall) {
     console.log(correctMsg + "Passed siblings height:")
+    console.log("\tSister's height was " + sistersHeight + "cm and brother's height was " + brothersHeight + "cm, threshold was " + thresholdForTall + "cm.")
     console.log("\tValue of 'siblingsAreTall' you got was '" + siblingsAreTall + "'")
     console.log("\tValue of 'siblingsAreShort' you got was '" + siblingsAreShort + "'")
     console.log("\tValue of 'atLeastOneIsTall' you got was'" + atLeastOneIsTall + "'")
@@ -220,6 +223,7 @@ if (siblingsAreTall !== undefined && siblingsAreTall === correctAllAreTall &&
     passedTests++
 } else {
     console.log(incorrectMsg + "Failed siblings height:")
+    console.log("\tSister's height was " + sistersHeight + "cm and brother's height was " + brothersHeight + "cm, threshold was " + thresholdForTall + "cm.")
     console.log("\t'siblingsAreTall' should be '" + correctAllAreTall + "' and you got '" + siblingsAreTall + "'")
     console.log("\t'siblingsAreShort' should be '" + correctAllAreShort + "' and you got '" + siblingsAreShort + "'")
     console.log("\t'atLeastOneIsTall' should be '" + correctAtLeastOneIsTall + "' and you got '" + atLeastOneIsTall + "'")
