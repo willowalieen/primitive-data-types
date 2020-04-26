@@ -151,8 +151,9 @@ elif type(studentPasses) is bool and studentPasses == correctStudentPasses:
 	print("\tThe value of 'studentPasses' you got was: '" + str(studentPasses) + "'")
 	passedTests+= 1
 else:
+	print(incorrectMsg + "Failed exam score tests")
 	print("\tThe students two scores on the test were " + str(examScore1) + " and " + examScore2 + ", the score to pass was " + scoreToPass + ".")
-	print(incorrectMsg + "The value of 'studentPasses' should be '" + str(correctStudentPasses) + "', yours is '" + str(studentPasses) + "'")
+	print("\tThe value of 'studentPasses' should be '" + str(correctStudentPasses) + "', yours is '" + str(studentPasses) + "'")
 totalTests += 1
 
 
