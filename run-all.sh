@@ -6,7 +6,7 @@ echo "Javascript Strings"
 node strings/strings.js
 echo
 echo "Python Strings"
-python strings/strings.py
+python3 strings/strings.py
 
 echo
 echo
@@ -17,7 +17,7 @@ echo "Javascript Booleans"
 node booleans/booleans.js
 echo
 echo "Python Booleans"
-python booleans/booleans.py
+python3 booleans/booleans.py
 
 echo
 echo
@@ -28,4 +28,4 @@ echo "Javascript Numbers"
 node numbers/numbers.js
 echo
 echo "Python Numbers"
-python numbers/numbers.py
+python3 numbers/numbers.py
